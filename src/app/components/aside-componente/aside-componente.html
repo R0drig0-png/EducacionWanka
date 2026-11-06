@@ -1,0 +1,61 @@
+<aside class="p-3 bg-light rounded shadow-sm border">
+  <h5 class="fw-bold mb-3 text-primary">
+    <i class="bi bi-funnel-fill me-2"></i>Filtros de Búsqueda
+  </h5>
+
+  <form>
+    <!-- Filtro por Categoría -->
+    <div class="mb-3">
+      <label for="categoriaSelect" class="form-label fw-semibold">Categoría</label>
+      <select class="form-select" id="categoriaSelect">
+        <option selected>Todas las categorías</option>
+        <option value="matematicas">Matemáticas</option>
+        <option value="comunicacion">Comunicación</option>
+        <option value="ciencias">Ciencias Naturales</option>
+        <option value="historia">Historia y Ciencias Sociales</option>
+        <option value="tecnologia">Tecnología e Informática</option>
+      </select>
+    </div>
+
+    <!-- Filtro por Nivel Educativo -->
+    <div class="mb-3">
+      <label for="nivelSelect" class="form-label fw-semibold">Nivel Educativo</label>
+      <select class="form-select" id="nivelSelect">
+        <option selected>Todos los niveles</option>
+        <option value="primaria">Educación Primaria</option>
+        <option value="secundaria">Educación Secundaria</option>
+        <option value="superior">Educación Superior / Técnica</option>
+      </select>
+    </div>
+
+    <!-- Filtro por Tipo de Recurso -->
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Tipo de Recurso</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="pdf" id="checkPdf">
+        <label class="form-check-label" for="checkPdf">
+          Documentos PDF / Guías
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="video" id="checkVideo">
+        <label class="form-check-label" for="checkVideo">
+          Videos Educativos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="ejercicio" id="checkEjercicio">
+        <label class="form-check-label" for="checkEjercicio">
+          Ejercicios Prácticos
+        </label>
+      </div>
+    </div>
+
+    <!-- Botón de Acción -->
+    <div class="d-grid gap-2 mt-4">
+      <button type="button" class="btn btn-primary rounded-pill">
+        <i class="bi bi-search me-1"></i> Aplicar Filtros
+      </button>
+    </div>
+  </form>
+</aside>
